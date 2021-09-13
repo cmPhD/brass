@@ -22,14 +22,11 @@ looks like `Config.<settingName>`.
 2. Setup Python 3.8 virtual environment in `venv/` (see requirements above)
    with something like:
 
-
-        ```
         cd venv
         /usr/local/opt/python@3.8/bin/python3 -m venv --system-site-packages --copies .
         soure bin/activate
         pip3 install pandas scipy tables scikit-learn
         deactivate
-        ```
 
 3. (OPTIONAL) Setup a Matlab parallel pool. A local pool will also suffice. Put
    the pool name in `Config.ParallelPoolProfile` and number of workers in
